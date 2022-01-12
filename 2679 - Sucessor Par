@@ -1,0 +1,24 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int x, sucessor;
+        x = int.Parse(Console.ReadLine());
+
+        if(x %2 ==0){
+            sucessor = x +2;
+         }
+        else{
+            sucessor = x + 1;
+        }
+    
+
+        Console.WriteLine (sucessor); 
+
+    
+    
+}
+
+}

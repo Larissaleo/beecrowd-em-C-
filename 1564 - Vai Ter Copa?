@@ -1,0 +1,25 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+          string a;
+        
+           while((a=Console.ReadLine())!=null)
+           {
+              int x;
+              x = int.Parse(a);
+            
+              if(x == 0){
+                Console.WriteLine("vai ter copa!");
+              }
+              else{
+              Console.WriteLine("vai ter duas!");
+              }
+           }
+       
+
+    }
+
+}

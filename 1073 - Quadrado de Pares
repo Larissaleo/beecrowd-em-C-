@@ -1,0 +1,19 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+       int n, cont, Qrd;
+        n = int.Parse(Console.ReadLine());
+
+        for(cont=1; cont<=n; cont++){
+            if(cont % 2==0){
+                Qrd = cont*cont;
+                Console.WriteLine (cont + "^2 = "+ Qrd);
+            }
+         }
+
+    }
+
+}

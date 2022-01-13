@@ -1,0 +1,18 @@
+using System; 
+
+class URI {
+
+    static void Main(string[] args) { 
+
+    
+        int a, b, Soma;
+        a = int.Parse(Console.ReadLine());
+        b = int.Parse(Console.ReadLine());
+    
+        Soma = a + b;
+    
+        Console.WriteLine ("SOMA = {0}",Soma);
+
+    }
+
+}

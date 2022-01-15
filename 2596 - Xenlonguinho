@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Dio
+{
+    class Xenlongao
+    {
+        public static bool Divisor(int i, int j)
+  {
+    return (i % j) == 0;
+  }
+  public static int CalcularDivisores(int n)
+  {
+    int quantidade = 0;
+
+    for (int i = 1; i <= n; i++)
+    {
+      int contador = 0;
+
+      for (int j = 1; j <= i; j++)
+      {
+        if (Divisor(i, j))
+        {
+          contador++;
+          
+        }
+      }
+
+      if (contador % 2 == 0)
+      {
+        quantidade++;
+      }
+    }
+
+    return quantidade;
+  }
+
+ 
+
+  public static void Main (string[] args) 
+  {
+     int C = Convert.ToInt32(Console.ReadLine());
+    
+
+    while(C--> 0)
+    {
+       int N = Convert.ToInt32(Console.ReadLine());
+    
+      int resposta = CalcularDivisores(N);
+      Console.WriteLine(resposta);
+    }
+    }
+}
+
+}

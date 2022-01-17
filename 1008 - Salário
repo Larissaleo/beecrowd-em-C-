@@ -1,0 +1,16 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    int NumFuncionario, HorasTrabalhadas;
+    double valorHora, salario;
+    NumFuncionario = int.Parse(Console.ReadLine());
+    HorasTrabalhadas = int.Parse(Console.ReadLine());
+    valorHora = double.Parse(Console.ReadLine());
+
+    salario=HorasTrabalhadas*valorHora;
+    Console.WriteLine("NUMBER = {0}", NumFuncionario);
+    Console.WriteLine ("SALARY = U$ {0}",salario.ToString("0.00"));
+  }
+}

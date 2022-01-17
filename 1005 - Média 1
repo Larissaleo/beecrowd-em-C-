@@ -1,0 +1,14 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    double NotaA, NotaB, media;
+
+    NotaA = double.Parse(Console.ReadLine());
+    NotaB = double.Parse(Console.ReadLine());
+    media= (NotaA*3.5+NotaB*7.5)/11;
+
+    Console.WriteLine ("MEDIA = {0}",media.ToString("0.00000"));
+  }
+}

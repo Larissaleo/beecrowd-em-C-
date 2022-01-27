@@ -1,0 +1,24 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    double a, b, c, triangulo, circulo, trapezio, quadrado, retangulo, pi=3.14159;
+
+    string [] selections = Console.ReadLine().Split(' ');
+     a = double.Parse(selections[0]);
+     b = double.Parse(selections[1]);
+     c = double.Parse(selections[2]);
+
+    triangulo = a*c/2;
+    circulo =  pi*(c*c);
+    trapezio = (a+b)*c/2;
+    quadrado = b*b;
+    retangulo = a*b;
+    Console.WriteLine ("TRIANGULO: {0}", triangulo.ToString("0.000"));
+    Console.WriteLine ("CIRCULO: {0}", circulo.ToString("0.000"));
+    Console.WriteLine ("TRAPEZIO: {0}", trapezio.ToString("0.000"));
+    Console.WriteLine ("QUADRADO: {0}", quadrado.ToString("0.000"));
+    Console.WriteLine ("RETANGULO: {0}", retangulo.ToString("0.000"));
+  }
+}

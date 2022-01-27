@@ -1,0 +1,18 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    string [] selections = Console.ReadLine().Split(' ');
+        int a = int.Parse(selections[0]);
+        int b = int.Parse(selections[1]);
+        int c = int.Parse(selections[2]);
+
+        int MaiorAB;
+
+        MaiorAB=(a+b+abs(a-b))/2;
+        MaiorAB=(c+MaiorAB+abs(MaiorAB-c))/2;
+
+    Console.WriteLine ("{0} eh o maior", MaiorAB);
+  }
+}

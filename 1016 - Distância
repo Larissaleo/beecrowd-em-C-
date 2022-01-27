@@ -1,0 +1,13 @@
+using System;
+
+class Program {
+  public static void Main (string[] args) {
+
+    int distancia, calculo;
+
+    distancia = int.Parse(Console.ReadLine());
+    calculo = 150/60*distancia;
+
+    Console.WriteLine ("{0} minutos", calculo);
+  }
+}

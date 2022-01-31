@@ -1,0 +1,26 @@
+using System;
+
+namespace DIO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = int.Parse(Console.ReadLine());
+
+            int inicio = 1, x, z;
+
+            for (int i = 1; i <= n; i++)
+            {
+                
+                 //escreva aqui o seu código
+                 
+                 x = i*i;
+                 z = i*i*i;
+                 
+                 Console.WriteLine("{0} {1} {2}",i,x,z);
+                
+            }
+        }
+    }
+}

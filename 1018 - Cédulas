@@ -1,0 +1,37 @@
+using System;
+
+namespace DIO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, nota, quociente, resto;
+            int [] notas  = new int[] {100,50,20,10,5,2,1};
+            int [] totalNotas = new int[7];  
+            n = int.Parse(Console.ReadLine());
+            Console.WriteLine(n);
+
+            resto = n;
+
+            nota = 100;
+            quociente = resto / 100;
+            
+            resto = resto % 100;
+
+            for(int i =0; i<7; i++){
+                if(n>=notas[i]){
+                    totalNotas[i] = n / notas[i];
+                    n = n - totalNotas[i]*notas[i];
+                }
+            }
+
+            for(int i=0; i<7; i++){
+                Console.WriteLine($"{totalNotas[i]} nota(s) de R$ {notas[i]},00");
+            }
+
+           //Continue com a sua lógica aqui
+                                                   
+        }
+    }
+}

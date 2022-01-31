@@ -1,0 +1,46 @@
+using System;
+
+namespace DIO
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            //int x = int.Parse(Console.ReadLine());
+
+            //Digite o seu código aqui
+
+            int a,b=0;
+            int cont=0;
+            while(true){
+                
+               int x = int.Parse(Console.ReadLine());
+               b =0;
+               if(x == 0)
+               {
+                break;
+               }
+               else if (x%2==0){
+                 for(a=x; a<=x+8; a+=2)
+                 {
+                   b+=a;
+                 }
+                 
+               }else
+               {
+                 for(a=x+1; a<=x+9; a+=2)
+                 {
+                   b+=a;
+                 }
+               }
+               
+               
+              Console.WriteLine($"{b}");
+               
+              
+            
+        }
+    }
+}
+}
